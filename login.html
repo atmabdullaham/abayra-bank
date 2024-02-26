@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+  </head>
+  <body class="bg-fuchsia-100 content-center">
+    <header
+      id="header-section"
+      class="bg-green-200 w-3/4 mx-auto text-center mt-12 p-10 transition-all duration-300 ease-in-out hover:bg-white hover:text-blue-600 shadow-2xl"
+    >
+      <div>
+        <span class="material-symbols-outlined text-2xl">
+          account_balance
+        </span>
+        <h2 class="text-2xl font-bold cursor-pointer hover:underline">
+          Abayra Bank
+        </h2>
+        <h4 class="text-lg font-semibold cursor-pointer hover:underline">
+          Bangladesh PLC
+        </h4>
+      </div>
+    </header>
+    <main>
+      <!-- Sign in or Sign up -->
+      <section
+        id="signin-signup-section"
+        class="w-3/4 mx-auto text-center mt-16 shadow-2xl"
+      >
+        <div>
+          <div class="p-20 bg-blue-300 flex flex-col items-center gap-8">
+            <div class="shadow-inner shadow-white">
+              <h2 class="text-black font-medium text-2xl shadow-lg p-5">
+                Are you have a account?
+              </h2>
+              <button
+                id="signin-btn"
+                class="mt-2 px-32 py-2 bg-green-500 text-white rounded-md"
+              >
+                Sign In
+              </button>
+            </div>
+            <div class="shadow-inner shadow-white">
+              <h2 class="text-black font-medium text-2xl shadow-lg p-5 px-32">
+                Or
+              </h2>
+              <button
+                id="singup-btn"
+                class="mt-2 px-32 py-2 bg-green-500 text-white rounded-md"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The login section -->
+      <!-- Hidden, -->
+      <section
+        id="login-section"
+        class="w-3/4 mx-auto text-center mt-16 shadow-2xl hidden"
+      >
+        <div>
+          <div class="gap-3 p-20 bg-blue-300 flex flex-col items-center">
+            <div>
+              <h1
+                class="text-white text-5xl font-bold gap-150 shadow-xl shadow-black p-5 mb-16"
+              >
+                Welcome Back
+              </h1>
+              <input
+                id="email-input"
+                class="block mb p-2 border rounded-md w-full"
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                id="password-input"
+                class="block mb-2 px-2 py-2 bg-black text-white rounded-md w-full"
+                type="password"
+                placeholder="Password"
+              />
+              <button
+                id="login-btn"
+                class="mt-2 w-full py-2 bg-green-500 text-white rounded-md"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Create account Section -->
+      <!-- Hidden, -->
+      <section
+        id="create-account-section"
+        class="w-3/4 mx-auto text-center mt-16 shadow-2xl hidden"
+      >
+        <div>
+          <div class="p-20 bg-blue-300 flex flex-col items-center">
+            <div class="text-left">
+              <h1
+                class="text-white text-5xl font-bold gap-150 shadow-xl shadow-black p-5 mb-16"
+              >
+                Create Account
+              </h1>
+              <h6>Email</h6>
+              <!-- email -->
+              <input
+                id="newEmail-input"
+                class="block mb p-2 border rounded-md w-full"
+                type="text"
+                placeholder="Email"
+              />
+              <!-- Username -->
+              <h6>Username</h6>
+              <input
+                id="newUsername-input"
+                class="block mb p-2 border rounded-md w-full"
+                type="text"
+                placeholder="Username"
+              />
+              <!-- Password -->
+              <h6>Password</h6>
+              <input
+                id="newPassword-input"
+                class="block mb-2 px-2 py-2 bg-black text-white rounded-md w-full"
+                type="password"
+                placeholder="Password"
+              />
+              <!-- confirm Pass -->
+              <h6>Confirm password</h6>
+              <input
+                id="confirm-newPassword-input"
+                class="block mb-2 px-2 py-2 bg-black text-white rounded-md w-full"
+                type="password"
+                placeholder="Password"
+              />
+              <button
+                id="signup-btn"
+                class="mt-2 w-full py-2 bg-green-500 text-white rounded-md"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The deposit and withdraw section -->
+      <!-- hidden -->
+      <section
+        id="deposit-withdraw-section"
+        class="w-3/4 mx-auto bg-slate-300 shadow-2xl hidden"
+      >
+        <h1 class="text-5xl text-center mt-10 pt-8 shadow-xl pb-5">
+          You Can Proceeds Your
+          <span class="font-semibold text-purple-600">Deposit & Withdraw</span>
+        </h1>
+        <section class="mt-8">
+          <div class="grid grid-cols-3 gap-4 pl-6 pr-6">
+            <div
+              class="bg-green-200 p-8 rounded text-white text-center shadow-2xl"
+            >
+              <h3 class="text-2xl text-black font-semibold">Deposit</h3>
+              <h4
+                class="text-4xl bg-black w-1/2 block mx-auto r-5 p-1 mt-2 rounded-lg"
+              >
+                $<span id="deposit-total" class="text-green">00</span>
+              </h4>
+            </div>
+            <div
+              class="bg-blue-300 p-8 rounded text-white text-center shadow-2xl"
+            >
+              <h3 class="text-2xl text-black font-semibold">Balance</h3>
+              <h4
+                class="text-4xl bg-black w-1/2 block mx-auto r-5 p-1 mt-2 rounded-lg"
+              >
+                $<span id="balance-total">1240</span>
+              </h4>
+            </div>
+            <div
+              class="bg-red-200 p-8 rounded text-white text-center shadow-2xl"
+            >
+              <h3 class="text-2xl text-black font-semibold">Withdraw</h3>
+              <h4
+                class="text-4xl bg-black w-1/2 block mx-auto r-5 p-1 mt-2 rounded-lg"
+              >
+                $<span id="withdraw-total">00</span>
+              </h4>
+            </div>
+          </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mt-8 pb-6 pl-6 pr-6">
+          <div class="grid grid-cols-2 gap-8">
+            <div class="bg-green-100 p-8 rounded text-center shadow-2xl">
+              <h3 class="text-2xl">Please Deposit</h3>
+              <div class="text-center">
+                <input
+                  id="deposit-input"
+                  class="border border-gray-400 rounded block w-2/4 mb-8 mt-2 px-12 py-2 mx-auto"
+                  type="number"
+                  placeholder="Deposit Amount:-$"
+                />
+
+                <button
+                  id="deposit-btn"
+                  class="bg-green-600 px-4 rounded py-2 text-white font-semibold text-2xl"
+                >
+                  Deposit
+                </button>
+              </div>
+            </div>
+            <div class="bg-red-100 p-8 rounded text-center shadow-2xl">
+              <h3 class="text-2xl">Please Withdraw</h3>
+              <div class="text-center">
+                <input
+                  id="withdraw-input"
+                  class="border border-gray-400 rounded block w-2/4 mb-8 mt-2 px-12 py-2 mx-auto"
+                  type="number"
+                  placeholder=" Withdraw Amount:-$"
+                />
+
+                <button
+                  id="withdraw-btn"
+                  class="bg-red-600 px-4 rounded py-2 text-white font-semibold text-2xl"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
